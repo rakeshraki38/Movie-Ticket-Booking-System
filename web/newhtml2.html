@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the table container */
+        .vertical-table {
+            display: table;
+            width: 200px;
+            margin: 20px auto;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Style table rows (table-cell) */
+        .vertical-row {
+            display: table-row;
+        }
+
+        /* Style table cells (table-cell) */
+        .vertical-cell {
+            display: table-cell;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            font-weight: bold;
+        }
+
+        /* Style even rows with a different background color */
+        .vertical-row:nth-child(even) {
+            background-color: #e3e3e3;
+        }
+    </style>
+</head>
+<body>
+    <div class="vertical-table">
+        <div class="vertical-row">
+            <div class="vertical-cell">Name:</div>
+            <div class="vertical-cell">John Doe</div>
+        </div>
+        <div class="vertical-row">
+            <div class="vertical-cell">Mobile:</div>
+            <div class="vertical-cell">555-1234</div>
+        </div>
+        <div class="vertical-row">
+            <div class="vertical-cell">Ticket:</div>
+            <div class="vertical-cell">A123</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Action link styles */
+        .action-link {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: inline-block;
+            text-transform: uppercase; /* Uppercase text */
+        }
+
+        .action-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>ADMIN</h1>
+
+    <!-- Action Links -->
+    <div class="action-container">
+        
+        <a href="AddManagerFE.html" class="action-link">Add Manager</a>
+        <a href="MovieDashBoard.html" class="action-link" onclick="logout()">Log Out</a>
+    </div>
+
+    <!-- JavaScript function for logout -->
+    <script>
+        function logout() {
+            // Perform logout logic here
+            alert('Logged out.');
+            
+        }
+    </script>
+</body>
+</html>

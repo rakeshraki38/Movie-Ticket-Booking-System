@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .role-container1{
+            text-align: left;
+            color: white;
+        }
+        .role-link{
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 30px;
+            
+        }
+
+        .movie-grid {
+            display: flex ;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 2000px;
+            height: 200px;
+        }
+
+        .movie {
+            flex-basis: calc(33.33% - 10px);
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .movie img {
+            max-height: 100%;
+            max-width: 90%;
+/*            height: 200px;*/
+            
+        }
+
+        .movie h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .book-button {
+            background-color: blue;
+            color: white;
+            padding: 5px 5px;
+            text-decoration: none;
+            border-radius: 2px;
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .book-button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BOOK YOUR SHOW</h1>
+            <div class="role-container1">
+                <a class="role-link" href="Admin.html">
+                    <span class="role-icon">👑</span>
+                    Admin
+                </a>
+                <a class="role-link" href="Manager.html">
+                    <span class="role-icon">👔</span>
+                    Manager
+                </a>
+                <a class="role-link" href="UserRegisterFE.html">
+                    <span class="role-icon">📝</span>
+                    SignUp
+                </a>
+            </div>
+        </header>
+    
+    <div class="container">
+        <div class="movie-grid">
+            <div class="movie">
+                <img src="movie.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+                <p>Description of Movie 1</p>
+                <a class="book-button" href="booking-link-for-movie-1">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h2>Movie Title 2</h2>
+                <p>Description of Movie 2</p>
+                <a class="book-button" href="booking-link-for-movie-2">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+                <p>Description of Movie 1</p>
+                <a class="book-button" href="booking-link-for-movie-1">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h2>Movie Title 2</h2>
+                <p>Description of Movie 2</p>
+                <a class="book-button" href="booking-link-for-movie-2">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+                <p>Description of Movie 1</p>
+                <a class="book-button" href="booking-link-for-movie-1">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h2>Movie Title 2</h2>
+                <p>Description of Movie 2</p>
+                <a class="book-button" href="booking-link-for-movie-2">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+                <p>Description of Movie 1</p>
+                <a class="book-button" href="booking-link-for-movie-1">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h2>Movie Title 2</h2>
+                <p>Description of Movie 2</p>
+                <a class="book-button" href="booking-link-for-movie-2">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+                <p>Description of Movie 1</p>
+                <a class="book-button" href="booking-link-for-movie-1">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h2>Movie Title 2</h2>
+                <p>Description of Movie 2</p>
+                <a class="book-button" href="booking-link-for-movie-2">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+                <p>Description of Movie 1</p>
+                <a class="book-button" href="booking-link-for-movie-1">Book Tickets</a>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h2>Movie Title 2</h2>
+                <p>Description of Movie 2</p>
+                <a class="book-button" href="booking-link-for-movie-2">Book Tickets</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

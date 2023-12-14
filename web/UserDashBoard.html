@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theater Actions</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Action link styles */
+        .action-container {
+            margin-top: 20px;
+        }
+
+        .action-link {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF; /* Button color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: bold; /* Bold text */
+        }
+
+        .action-link:hover {
+            background-color: #0056b3; /* Hover color */
+        }
+    </style>
+</head>
+<body>
+    <h1>USER</h1>
+
+    <!-- Action Links -->
+    <div class="action-container">
+        <a href="TBookingBE" class="action-link">Book Ticket</a>
+        <a href="Book" class="action-link">Profile</a>
+        <a href="MovieDashBoard.html" class="action-link" onclick="logout()" style="background-color: #ff3300;">Log Out</a> 
+    </div>
+
+   
+    <script>
+        function logout() {
+            // Perform logout logic here
+            alert('Logged out.');
+        }
+    </script>
+</body>
+</html>

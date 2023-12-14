@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Role Selection</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-image: url('movie.jpg');
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 0px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+
+            .role-card {
+                background-color: rgba(255, 255, 255, 0.8);
+                color: #333;
+                text-decoration: none;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; /* Align items to the top-left corner */
+                cursor: pointer;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+                position: relative; /* Add relative positioning for ticket icon */
+            }
+
+            .role-card:hover {
+                background-color: rgba(255, 255, 255, 1);
+            }
+
+            .role-icon {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .ticket-icon {
+                font-size: 24px;
+                position: absolute; /* Position the ticket icon */
+                top: 10px; /* Adjust top position for the ticket icon */
+                left: 10px; /* Adjust left position for the ticket icon */
+            }
+
+            .role-label {
+                align-self: flex-start; /* Align the label to the top-left corner */
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .role-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>BOOK YOUR SHOW</h1>
+        </header>
+
+        <div class="role-container">
+
+            <a class="role-card" href="Admin.html">
+                <span class="role-icon">👑</span>
+                <span class="role-label">Admin</span>
+            </a>
+            
+            <a class="role-card" href="Manager.html">
+                <span class="role-icon">👔</span>
+                <span class="role-label">Manager</span>
+            </a>
+            <a class="role-card" href="Profile.html">
+                <span class="role-icon">👤</span>
+                <span class="role-label">Profile</span>
+            </a>
+            
+            <a class="role-card" href="TBookingBE">
+                <!--<span class="role-icon">👤</span>-->
+                <span class="role-icon">🎫</span>       
+                <span class="role-label">Book Tickets</span>
+            </a>
+
+            
+            
+        </div>
+    </body>
+</html>

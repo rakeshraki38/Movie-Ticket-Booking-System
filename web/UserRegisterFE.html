@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: grey;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            h1 {
+                text-align: center;
+                color: purple;
+            }
+
+            form {
+                background-color: wheat;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                width: 400px;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="password"] {
+                width: 90%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            input[type="submit"] {
+                background-color: whitesmoke;
+                color: black;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: red;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="AddUser">
+            <h1>USER REGISTRATION</h1>
+
+            <label>Name:</label>
+            <input type="text" name="name" required><br>
+
+            <label>Address:</label>
+            <input type="text" name="address" required><br>
+
+            <label>Mobile Number:</label>
+            <input type="tel" name="mobile" required><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" required><br>
+
+            <label>Password:</label>
+            <input type="password" name="password" required><br>
+            <br>
+            <input type="submit" value="Register">
+
+        </form>
+    </body>
+</html>

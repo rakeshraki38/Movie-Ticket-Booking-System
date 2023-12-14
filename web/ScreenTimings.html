@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: grey;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            h1 {
+                text-align: center;
+                color: purple;
+            }
+
+            form {
+                background-color: wheat;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                width: 400px;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="password"]
+            input[type="datetime-local"]{
+                width: 90%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            input[type="submit"] {
+                background-color: whitesmoke;
+                color: black;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: red;
+
+            }
+        </style>
+    </head>
+    <body>
+    
+    <form action="ScreenTimingsBE" method="POST">
+        <h1>Add Screen Timings</h1>
+        <label for="theaterId">Theater ID:</label>
+        <input type="number" id="theaterId" name="theaterId" required>
+        <br>
+
+        <label for="theaterName">Theater Name:</label>
+        <input type="text" id="theaterName" name="theaterName" required>
+        <br>
+
+        <label for="screen">Screen:</label>
+        <input type="number" id="screen" name="screen" required>
+        <br>
+
+        <label for="showtime">Showtime:</label>
+        <input type="time" id="showtime" name="showtime" required>
+        <br>
+
+        <label for="showname">Show Name:</label>
+        <input type="text" id="showname" name="showname" required>
+        <br>
+        <br>
+        <input type="submit" value="Add Screen Timings">
+    </form>
+</body>
+
+</html>
